@@ -12,12 +12,34 @@ header{
     position: fixed;
 }
 
+#left-side{
+    display: flex;
+}
 #left-side h3{
     color: #fff;
-    margin: 0;
-    font-size: 22;
+    margin: 0ch;
+    margin-left: 0.5ch;
+    font-size: 22px;
     font-weight: 900;
     text-transform: uppercase;
+}
+
+#left-side label{
+    margin-left: 1vh;
+    height: 50px;
+    width: 50px;
+
+}
+
+#left-side i:hover{
+    cursor: pointer;
+}
+
+#left-side i{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    font-size: 30px;
 }
 
 .btn-sair{
@@ -25,14 +47,14 @@ header{
     text-decoration: none;
     float: right;
     margin-right:40px;
-    margin-top: -20px;
+    margin-top: -50px;
     background-color: #19b3d3;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
-    border: #19b3d3;
+    border: #09b3d3;
     border-radius: 5px;
     border-width: 2px;
-    padding: 5px 5px;
+    padding: 5px 7px;
     transition-delay: 1.5 ;
     transition: 250ms;
 }
@@ -71,6 +93,8 @@ nav{
     min-height: 100vh;
     width: 20ch;
     font-size: 22px;
+    display: none;
+    transition: 1s ease-in-out;
 }
 
 nav a{
@@ -78,6 +102,7 @@ nav a{
     border-style:solid;   
     border-color: #f2f2f2;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
 nav a:hover {
@@ -90,6 +115,7 @@ nav a:hover {
 #menu-itens{
     display: grid;
     grid-gap: 4ch;
+    padding: 10px;
     margin: 2ch;
     text-decoration: none;
     color: #fff;    
@@ -101,15 +127,18 @@ nav a:hover {
 
 }
 
+#chkMenu{
+    visibility: none;
+    position: fixed;
+}
+
 #menu-itens a{
     text-decoration: none;
     color: #f2f2f2;    
 
 }
 
-#chkMenu{
-    visibility:hidden;
-}
+
 
 .Body{
     background-image: url(images/penguin.webp);

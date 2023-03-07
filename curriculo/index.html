@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-
+    <script src="script.js"></script>
     <title>Curriculo</title>
   </head>
   <body>
@@ -17,22 +17,24 @@
     <header>
       <div id="left-side">
         <h3>Sistema Fiep</h3>
+        <label for="chkMenu">
+          <i class="fas fa-bars"></i>
+        </label>
+
       </div>
       <div>
         <a
           href="https://www.youtube.com/watch?v=ZfWv96cxp9I&ab_channel=loscarjr"
           class="btn-sair"
-          >Sair</a
+          >Sign Out</a
         >
         
       </div>
 
-      <label for="chkMenu">
-        <i class="fas fa-bars"></i>
-      </label>
+      
     </header>
 
-    <nav>
+    <nav id="navigation">
       <div id="perfil">
         <img src="/images/Penguin.jpg" alt="Avatar não encontrado" />
         <h4>Pinguino</h4>
@@ -64,9 +66,8 @@
       </a>
       </div>
     </nav>
-
     <div class="Body"></div>
-    <input type="checkbox" id="chkMenu" />
+    <input type="checkbox" id="chkMenu" onclick="menuDisplay()" />
 
   </body>
 </html>
