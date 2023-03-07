@@ -33,12 +33,13 @@ header{
 
 #left-side i:hover{
     cursor: pointer;
+    color: #fff;
 }
 
 #left-side i{
     height: 50px;
     width: 50px;
-    color: #fff;
+    color: #eee;
     font-size: 30px;
 }
 
@@ -114,6 +115,7 @@ nav a:hover {
 
 #menu-itens{
     display: grid;
+    text-align: center;
     grid-gap: 4ch;
     padding: 10px;
     margin: 2ch;
@@ -124,7 +126,6 @@ nav a:hover {
 #menu-itens span{
     text-decoration: none;
     color: #f2f2f2;    
-
 }
 
 #chkMenu{
@@ -137,8 +138,6 @@ nav a:hover {
     color: #f2f2f2;    
 
 }
-
-
 
 .Body{
     background-image: url(images/penguin.webp);
