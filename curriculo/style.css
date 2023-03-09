@@ -116,7 +116,7 @@ nav a:hover {
 #menu-itens{
     display: grid;
     text-align: center;
-    grid-gap: 4ch;
+    grid-gap: 4vh;
     padding: 10px;
     margin: 2ch;
     text-decoration: none;
