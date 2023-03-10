@@ -147,15 +147,20 @@ nav a:hover {
     background-size: cover;
     height: 100vh;
     width: 100vw;
+
+}
+
+#Page{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 
 
 #RealPage{
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +179,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     gap: 10vw;
-    margin-bottom: 0vh;
+    align-items:center ;
 }
 
 #Avatar h2{
@@ -201,7 +206,7 @@ nav a:hover {
 #change{
     padding: 4vh;
     text-align: justify;
-    margin-bottom: 10vh;
+    margin-bottom: 0vh;
 }
 
 #change h3{
@@ -222,6 +227,7 @@ nav a:hover {
     gap: 20vw;
     font-size: 16px;
     padding: 10px;
+    margin-bottom: 0vh;
 }
 
 #buttons span{
@@ -237,9 +243,12 @@ nav a:hover {
 #Obj{
     display: none;
 }
+
 #Forma{
     display: none;
+
 }
+
 #Cursos{
     display: none;
 }

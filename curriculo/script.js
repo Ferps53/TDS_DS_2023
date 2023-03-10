@@ -10,47 +10,35 @@ function menuDisplay() {
     }
 }
 
+let numPage = 1;
+mostrarPagina(numPage);
 
-function plus(){
-    var numPage = 1;
-    var plusButton = document.getElementById("plus");
-    if(plusButton.click){
-        numPage++;
-        alert(numPage);
-    }
+function change(n){
+    mostrarPagina(numPage += n);
 }
 
 
-function carrosel(){
-    var numPage = 1;
-    var plusButton = document.getElementById("plus");
-    var minusButton = document.getElementById("minus");
-
-   
-    if(minusButton.click){
-        numPage--;
+function mostrarPagina(n){
+    let i;
+    let Info = document.getElementById("Info");
+    let ObJ = document.getElementById("Obj");
+    let Cursos = document.getElementById("Cursos")
+    let Forma = document.getElementById("Forma");
+    let pages = [Info, Obj, Cursos, Forma];
+    if(numPage > 4){
+        numPage = 1;
     }
     if(numPage < 1){
         numPage = 4;
-    }else if(numPage > 4){
-        numPage = 1
     }
-
-    switch(numPage){
-        case 1:
-            //display page 1
-            break;
-        case 2:
-            //display page 2
-            break;
-        case 3:
-            //display page 3
-            break;
-        case 4:
-            //display page 4
-            break;
+    for(i = 0; i < pages.length; i++){
+        pages[i].style.display = "none";
     }
-
+    pages[numPage-1].style.display = "block";
 
 }
+
+
+
+
 
