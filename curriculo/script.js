@@ -35,6 +35,7 @@ function mostrarPagina(n){
         pages[i].style.display = "none";
     }
     pages[numPage-1].style.display = "block";
+    alert(numPage);
 
 }
 
