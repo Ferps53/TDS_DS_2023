@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <script src="script.js"></script>
+    <title>Curriculo</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="left-side">
+            <h3>Sistema Penguin</h3>
+            <label for="chkMenu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=ZfWv96cxp9I&ab_channel=loscarjr" class="btn-sair">Sign Out</a>
+
+        </div>
+
+    </header>
+
+    <nav id="navigation">
+        <div id="perfil">
+            <img src="images/Penguin.jpg" alt="Avatar não encontrado" />
+            <h4>Pinguino</h4>
+        </div>
+        <div id="menu-itens">
+            <a href="#">
+                <i class="fa fa-desktop"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-cogs"></i>
+                <span>Components</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-table"></i>
+                <span>Tables</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-th"></i>
+                <span>Forms</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-sliders-h"></i>
+                <span>Config</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-info-circle"></i>
+                <span>Info</span>
+            </a>
+        </div>
+    </nav>
+    <div class="Body">
+        <div id="Page">
+            <div id="RealPage">
+                <div id="Avatar">
+                    <img src="images/Pinguino.gif" alt=";">
+                    <h2>Ferps 53</h2>
+                </div>
+                <div id="change">
+                    <div id="Info">
+                        <h3>Sobre Mim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora recusandae voluptatum voluptate, dolor officiis culpa error harum suscipit, odit voluptates vel. Est aut ut dolore distinctio, ipsam obcaecati fugiat odio?</p>
+                    </div>
+                    <div id="Obj">
+                    <h3>Objetivo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora recusandae voluptatum voluptate, dolor officiis culpa error harum suscipit, odit voluptates vel. Est aut ut dolore distinctio, ipsam obcaecati fugiat odio?</p>
+                    </div>
+                    <div id="Cursos">
+                        <h3>Cursos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora recusandae voluptatum voluptate, dolor officiis culpa error harum suscipit, odit voluptates vel. Est aut ut dolore distinctio, ipsam obcaecati fugiat odio?</p></div>
+                    <div id="Forma">
+                        <h3>Formações</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora recusandae voluptatum voluptate, dolor officiis culpa error harum suscipit, odit voluptates vel. Est aut ut dolore distinctio, ipsam obcaecati fugiat odio?</p>
+                    </div>
+                </div>
+
+                <div id="buttons">
+                    <button id="minus"onclick="change(-1)">; <i class="fa fa-arrow-left"></i> <span>Previous</span></button>
+
+                    <button id="plus" onclick="change(1)"> <span>Next</span> <i class="fa fa-arrow-right"></i> </button>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" id="chkMenu" onclick="menuDisplay()" />
+
+</body>
+
+</html>

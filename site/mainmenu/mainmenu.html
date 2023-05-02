@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho Massa</title>
+    <link rel="stylesheet" href="mainmenu.css">
+</head>
+<body onload="startMenu()">
+
+    
+
+    <div id="menu">
+        <header id="nome">
+            <h2>Melhor Jogo</h2>
+        </header>
+        <button id="Jogar" onclick="Jogar()">Jogar</button>
+        <button id="Opcoes" onclick="abrirConfig()">Opções</button>
+        <button id="Creditos" onclick="abrirCreditos()">Créditos</button>
+        <button id="Saga" onclick="Saga()">Caçar!</button>
+    </div>
+
+    <div id="menuCreditos">
+        <h1 id="cre">Créditos</h1>
+        <h1 id="autor">Autor: Ferps53</h1>
+        <img src="../img/Pinguino.gif" alt="">
+        <a href="https://github.com/Ferps53/TDS_DS_2023">Link do Repo</a>
+        <a href="https://www.youtube.com/watch?v=p88rNckccmg&list=PLN0tvDAN1yvSNbkHAwPzJ5O4pP_e2vyme&ab_channel=BananaCoding">Link do Tutorial de Canvas</a>
+        <button id="sairCreditos" onclick="sairCreditos()">Sair</button>
+    </div>
+    
+    <div id="configMenu">
+        <h1>Opções</h1>
+        <div id="sliders">
+            <div id="dificuldade">
+                <p id="valorDificuldade">Dificuldade: </p>
+                <input type="range" min="1" max="3" value="2" id="dificuldadeRange">
+            </div>
+            <div id="volume">
+                <p>Volume</p>
+                <input type="range" min="0" max="100" value="100" id="volumeRange">
+            </div>
+        </div>
+        <div id="">
+            <button id="sairConfig" onclick="fecharConfig()">Sair</button>
+            <button id="salvarConfig" onclick="salvarConfig()">Aplicar</button>
+        </div>
+    </div>
+    <script src="../scripts/mainmenu.js"></script>
+</body>
+</html>
